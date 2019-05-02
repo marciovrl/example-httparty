@@ -4,7 +4,7 @@ When("add item Post with {string} and {string}") do |title, body|
         :body => body
     }.to_json
     puts @url_token
-    @response = HTTParty.put(@url_token, :headers => @header, :body => @params)
+    @response = HTTParty.post(@url_token, :headers => @header, :body => @params)
 end
   
 Then("I see inserted item") do
@@ -19,7 +19,7 @@ When("add item Post without {string} or {string}") do |title, body|
         :body => body
     }.to_json
 
-    @response = HTTParty.put(@url_token+"/5", :headers => @header, :body => @params)
+    @response = HTTParty.post(@url_token, :headers => @header, :body => @params)
 end
 
 Then("I receive invalid action message") do
