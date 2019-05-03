@@ -64,13 +64,15 @@ bundle install
 ```
 |
 | - features
-    | - schemas
+    | - pages
+        | - example.page.rb
+    | - specifications
+        | - example.feature
     | - step_definitions
-        | - `example.step.rb`
+        | - example.step.rb
     | - support
-        | - `env.rb`
-    | - `example.feature`
-| - `.gitignore`
-| - `Gemfile`  
-| - `README.md`  
+        | - env.rb
+| - .gitignore
+| - Gemfile
+| - README.md
 ```
