@@ -5,7 +5,7 @@ Feature: Add item Post
 
     Background: Use endpoint posts
         Given use endpoint posts
-
+        
     Scenario Outline: Add item Post
         When add item Post with <title> and <body>
         Then I see inserted item
