@@ -1,16 +1,12 @@
 Given("use endpoint posts") do
-    @url_token = "https://jsonplaceholder.typicode.com/posts"
-    
-    @header = {
-        'Content-Type' => 'application/json'
-    }
+    @post = Post.new()
 end
   
 When("ready all Post item") do
-    @response = HTTParty.get(@url_token, :headers => @header)
+    $response = @post.getPosts
 end
   
 Then("I view all Post items") do
-    expect(@response.code).to eql(200)
-    expect(@response.body).not_to be_empty
+    expect($response.code).to eql(200)
+    expect($response.body).not_to be_empty
 end
