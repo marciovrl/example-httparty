@@ -1,0 +1,15 @@
+{
+    "description": "Schmea of GET",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "number"
+        },
+        "title": {
+            "type": "string"
+        },
+        "body": {
+            "type": "string"
+        }
+    }
+}

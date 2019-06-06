@@ -9,4 +9,5 @@ end
 Then("I view all Post items") do
     expect($response.code).to eql(200)
     expect($response.body).not_to be_empty
+    expect($response.body).to match_json_schema('post')
 end
