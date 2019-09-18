@@ -1,4 +1,4 @@
-#language:en 
+#language:en
 
 @deletePosts
 Feature: Delete item Post

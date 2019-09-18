@@ -1,4 +1,4 @@
-#language:en 
+#language:en
 
 @getPosts
 Feature: List item Post
